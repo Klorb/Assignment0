@@ -4,6 +4,6 @@ fun main (args: Array<String>)
 
     sqShape.setDimensions(5.0, 5.0);
 
-    println(sqShape.getArea());
+    println("${sqShape.getName()} Area: ${sqShape.getArea()}");
 
 }
