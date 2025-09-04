@@ -1,4 +1,4 @@
-abstract class Shape (_name : String) // : Dimensionable
+abstract class Shape (_name : String) : Dimensionable
 {
     private var name = _name
 
