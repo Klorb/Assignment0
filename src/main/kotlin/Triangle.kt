@@ -2,6 +2,7 @@ import kotlin.math.sqrt;
 
 open class Triangle(_name: String): Shape(_name)
 {
+    //dimension variables for all sides
     private var side1: Double = 0.0;
     private var side2: Double = 0.0;
     private var side3: Double = 0.0;
@@ -14,6 +15,7 @@ open class Triangle(_name: String): Shape(_name)
         side3 = newSide3;
     }
 
+    //print dimensions function specified for triangle
     override fun printDimensions()
     {
         super.printDimensions()
@@ -22,14 +24,16 @@ open class Triangle(_name: String): Shape(_name)
                 "Side 2: ${side2}\n" +
                 "Side 3: ${side3}\n" +
                 "Perimeter: ${getPerimeter()}\n" +
-                "Area: ${this.getArea()}")
-    }
+                "Area: ${this.getArea()}\n")
+    } //end printDimensions
 
+    //return area of a triangle
     override fun getArea(): Double
     {
         val s: Double = .5*(side1+side2+side3);
         return sqrt(s*(s-side1)*(s-side2)*(s-side3));
-    }
+    } //end getArea
 
+    //getPerimeter function
     open fun getPerimeter(): Double = side1+side2+side3;
-}
+}//end triangle class

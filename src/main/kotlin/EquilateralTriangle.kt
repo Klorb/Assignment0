@@ -11,12 +11,12 @@ class EquilateralTriangle(_name: String): Triangle(_name)
 
     override fun printDimensions()
     {
-        println("Printing dimensions for: Triangle named ${getName()}\n" +
+        println("Printing dimensions for: Equilateral Triangle named ${getName()}\n" +
                 "Side 1: ${sideLen}\n" +
                 "Side 2: ${sideLen}\n" +
                 "Side 3: ${sideLen}\n" +
                 "Perimeter: ${getPerimeter()}\n" +
-                "Area: ${this.getArea()}")
+                "Area: ${this.getArea()}\n")
     }
 
     override fun getArea(): Double

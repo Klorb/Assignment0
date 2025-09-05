@@ -1,9 +1,9 @@
-import java.awt.geom.Arc2D
-
+//dimensionable interface
 interface Dimensionable
 {
-    open fun printDimensions()
+    //printDimensions function
+    fun printDimensions()
     {
         print("Printing Dimensions for: ");
-    }
-}
+    }//end printDimensions
+}//end dimensionable

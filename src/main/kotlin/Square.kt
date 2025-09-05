@@ -1,5 +1,6 @@
 class Square (_name: String): Shape(_name)
 {
+    //variables for
     var length: Double = 0.0;
     var height: Double = 0.0;
 
@@ -18,10 +19,12 @@ class Square (_name: String): Shape(_name)
                 "Length: ${length}\n" +
                 "Height: ${height}\n" +
                 "Perimiter: ${getPerimeter()}\n" +
-                "Area: ${this.getArea()}");
+                "Area: ${this.getArea()}\n");
     }
 
+    //getArea function specific for a square
     override fun getArea(): Double = length*height;
 
+    //getPerimeter function
     fun getPerimeter(): Double = length*2 + height*2;
 }

@@ -19,7 +19,7 @@ class Circle(_name: String): Shape(_name)
                 "Radius: ${radius}\n" +
                 "Diameter: ${getDiameter()}\n" +
                 "Perimeter: ${getPerimeter()}\n" +
-                "Area: ${getArea()}")
+                "Area: ${getArea()}\n")
     }
 
     override fun getArea(): Double = PI * radius * radius;
