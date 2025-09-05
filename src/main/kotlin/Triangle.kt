@@ -1,5 +1,7 @@
+//imports: sqrt for area function
 import kotlin.math.sqrt;
 
+//triangle class
 open class Triangle(_name: String): Shape(_name)
 {
     //dimension variables for all sides

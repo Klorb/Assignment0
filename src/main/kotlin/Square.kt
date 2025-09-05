@@ -1,3 +1,4 @@
+//square class
 class Square (_name: String): Shape(_name)
 {
     //variables for
@@ -20,11 +21,11 @@ class Square (_name: String): Shape(_name)
                 "Height: ${height}\n" +
                 "Perimiter: ${getPerimeter()}\n" +
                 "Area: ${this.getArea()}\n");
-    }
+    }//end printDimensions
 
     //getArea function specific for a square
     override fun getArea(): Double = length*height;
 
     //getPerimeter function
     fun getPerimeter(): Double = length*2 + height*2;
-}
+} //end square class
